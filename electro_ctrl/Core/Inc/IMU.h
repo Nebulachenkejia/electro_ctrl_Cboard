@@ -22,12 +22,12 @@ private:
     float yaw;
 
 public:
-    int16_t x_acc_raw_;
-    int16_t y_acc_raw_;
-    int16_t z_acc_raw_;
-    int16_t x_gyro_raw_;
-    int16_t y_gyro_raw_;
-    int16_t z_gyro_raw_;
+    float x_acc_raw_;
+    float y_acc_raw_;
+    float z_acc_raw_;
+    float x_gyro_raw_;
+    float y_gyro_raw_;
+    float z_gyro_raw_;
     IMU();
     void acc_calculate(uint8_t *accel_rx_data);
     void gyro_calculate(uint8_t *gyro_rx_data);
