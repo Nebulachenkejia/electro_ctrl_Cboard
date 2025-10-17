@@ -158,7 +158,7 @@
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>gyro_rx_data</ItemText>
+          <ItemText>gyro_rx_data,0x10</ItemText>
         </Ww>
         <Ww>
           <count>2</count>

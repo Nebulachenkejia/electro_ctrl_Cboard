@@ -111,6 +111,7 @@ void bmi088_init(void) {
     BMI088_ACCEL_NS_L();
     HAL_Delay(1);
     bmi088_write_reg(0x7D, 0x04); // Write 0x04 to ACC_PWR_CTRL(0x7D)
+    //bmi088_write_reg(0x41, 0x03);
     HAL_Delay(1);
     BMI088_ACCEL_NS_H();
 }

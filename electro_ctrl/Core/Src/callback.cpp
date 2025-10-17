@@ -6,7 +6,7 @@
 #include "IMU.h"
 #include "tim.h"
 
-IMU imu;
+IMU imu(0.3,0.3,0.7);
 extern uint8_t accel_rx_data[6];
 extern uint8_t gyro_rx_data[6];
 
@@ -25,6 +25,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
         bmi088_gyro_read_reg(0x02, gyro_rx_data, 6);    // 阻塞读取
         BMI088_GYRO_NS_H();
         imu.gyro_calculate(gyro_rx_data);
+        imu.angle_calulate();
 
     }
 }
